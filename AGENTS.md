@@ -111,7 +111,7 @@ Troubleshoot failures: check test isolation → verify mocks → fix implementat
 ## Workflow Surface Policy
 
 - `contexts/` is the team-facing home for agent-related project assets.
-- `.agents/skills/` remains the Codex/ECC runtime-loaded skill surface.
+- `.agents/skills/` remains the runtime-loaded skill surface.
 - Keep root-level AI docs limited to `AGENTS.md`, `RULES.md`, and tool manifests.
 - New workflow contributions should land in the organized surfaces above instead of adding new root directories.
 
@@ -143,7 +143,7 @@ contexts/
   rules/         — always-follow guidance by stack/domain
   baseline/      — base rules, standards, and templates for new projects and agents
 .agents/
-  skills/        — Codex/ECC runtime-loaded skills and plugin asset
+  skills/        — runtime-loaded skills and plugin asset
 ```
 
 ## Success Metrics

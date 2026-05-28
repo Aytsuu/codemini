@@ -83,7 +83,7 @@ Output:
 
 ## Output
 
-Stores baselines in `.ecc/benchmarks/` as JSON. Git-tracked so the team shares baselines.
+Stores baselines in the repo's benchmarks directory as JSON. Git-tracked so the team shares baselines.
 
 ## Integration
 

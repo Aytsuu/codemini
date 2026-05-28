@@ -9,5 +9,5 @@ This directory is the team-facing home for project-specific AI workflow assets.
 
 ## Runtime Note
 
-Codex/ECC still auto-loads skills from the hidden `.agents/skills/` directory.
+Codex still auto-loads skills from the hidden `.agents/skills/` directory.
 Keep that runtime surface aligned with the documented workflow in `AGENTS.md`.

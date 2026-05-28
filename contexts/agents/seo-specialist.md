@@ -59,4 +59,4 @@ Fix: Exact change to make
 
 ## Reference
 
-Use `.agents/skills/seo` for the canonical ECC SEO workflow and implementation guidance.
+Use `.agents/skills/seo` for the canonical SEO workflow and implementation guidance.

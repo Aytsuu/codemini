@@ -30,7 +30,7 @@ These rules override everything else in this file when in conflict:
 **Goal: understand the problem and the codebase before producing a diff.**
 
 - State your plan in one or two sentences before editing. For anything non-trivial, produce a numbered list of steps with a verification check for each.
-- Read the files you will touch. Read the files that call the files you will touch. Claude Code: use subagents for exploration so the main context stays clean.
+- Read the files you will touch. Read the files that call the files you will touch. Use subagents for exploration so the main context stays clean.
 - Match existing patterns in the codebase. If the project uses pattern X, use pattern X, even if you'd do it differently in a greenfield repo.
 - Surface assumptions out loud: "I'm assuming you want X, Y, Z. If that's wrong, say so." Do not bury assumptions inside the implementation.
 - If two approaches exist, present both with tradeoffs. Do not pick one silently. Exception: trivial tasks (typo, rename, log line) where the diff fits in one sentence.
@@ -101,7 +101,7 @@ For every task:
 
 - Context is the constraint. Long sessions with accumulated failed attempts perform worse than fresh sessions with a better prompt.
 - After two failed corrections on the same issue, stop. Summarize what you learned and ask the user to reset the session with a sharper prompt.
-- Use subagents (Claude Code: "use subagents to investigate X") for exploration tasks that would otherwise pollute the main context with dozens of file reads.
+- Use subagents for exploration tasks that would otherwise pollute the main context with dozens of file reads.
 - When committing, write descriptive commit messages (subject under 72 chars, body explains the why). No "update file" or "fix bug" commits. No "Co-Authored-By: Claude" attribution unless the project explicitly wants it.
 
 ---
@@ -142,7 +142,7 @@ After every session where the agent did something wrong:
 3. If ignored: the rule may be too long, too vague, or buried. Tighten it or move it up.
 4. Every few weeks, prune. For each line, ask: "Would removing this cause the agent to make a mistake?" If no, delete. Bloated AGENTS.md files get ignored wholesale.
 
-Boris Cherny (creator of Claude Code) keeps his team's file around 100 lines. Under 300 is a good ceiling. Over 500 and you are fighting your own config.
+Keep the team's file around 100 lines. Under 300 is a good ceiling. Over 500 and you are fighting your own config.
 
 ---
 
@@ -161,8 +161,8 @@ When the user corrects your approach, append a one-line rule here before ending 
 This boilerplate synthesizes:
 - Sean Donahoe's IJFW ("It Just F\*cking Works") principles: one install, working code, no ceremony.
 - Andrej Karpathy's observations on LLM coding pitfalls (the four principles: think-first, simplicity, surgical changes, goal-driven execution).
-- Boris Cherny's public Claude Code workflow (reactive pruning, keep it ~100 lines, only rules that fix real mistakes).
-- Anthropic's official Claude Code best practices (explore-plan-code-commit, verification loops, context as the scarce resource).
+- Public workflow guidance (reactive pruning, keep it ~100 lines, only rules that fix real mistakes).
+- Official best practices (explore-plan-code-commit, verification loops, context as the scarce resource).
 - Community anti-sycophancy patterns (explicit banned phrases, direct-not-diplomatic).
 - The AGENTS.md open standard (cross-tool portability via symlinks).
 

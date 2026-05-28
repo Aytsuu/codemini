@@ -1,11 +1,11 @@
 {
-  "name": "ecc",
+  "name": "codemini",
   "interface": {
-    "displayName": "Everything Claude Code"
+    "displayName": "Codemini"
   },
   "plugins": [
     {
-      "name": "ecc",
+      "name": "codemini",
       "version": "2.0.0-rc.1",
       "source": {
         "source": "local",

@@ -1,5 +1,10 @@
 {
   "mcpServers": {
+    "astro": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
+    },
     "jira": {
       "command": "uvx",
       "args": ["mcp-atlassian==0.21.0"],

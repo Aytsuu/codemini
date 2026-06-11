@@ -1,6 +1,7 @@
 {
   "mcp": {
     "allowed": [
+      "astro",
       "magic",
       "mui-mcp",
       "token-optimizer",
@@ -16,6 +17,11 @@
     ]
   },
   "mcpServers": {
+    "astro": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
+    },
     "magic": {
       "command": "npx",
       "args": [

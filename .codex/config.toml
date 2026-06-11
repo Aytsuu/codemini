@@ -32,8 +32,14 @@ persistent_instructions = "Follow project AGENTS.md guidelines. Use available MC
 # MCP servers
 # Keep the default project set lean. API-backed servers inherit credentials from
 # the launching environment or can be supplied by a user-level ~/.codex/config.toml.
+[mcp_servers.astro]
+command = "npx"
+args = ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
+startup_timeout_sec = 30
+
 [mcp_servers.exa]
 url = "https://mcp.exa.ai/mcp"
+startup_timeout_sec = 30
 
 [mcp_servers.supabase]
 url = "https://mcp.supabase.com/mcp"

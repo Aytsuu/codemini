@@ -15,9 +15,12 @@
     },
     "mcpServers": {
         "astro": {
-            "type": "stdio",
             "command": "npx",
-            "args": ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
+            "args": [
+                "-y",
+                "mcp-remote",
+                "https://mcp.docs.astro.build/mcp"
+            ]
         },
         "magic": {
             "command": "npx",

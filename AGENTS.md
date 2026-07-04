@@ -48,6 +48,17 @@ Use agents proactively without user prompt:
 
 Use parallel execution for independent operations — launch multiple agents simultaneously.
 
+## Web Research Tooling
+
+When web search, web crawling, or full-page extraction is needed, use Firecrawl MCP as the primary web data provider whenever it is available. If Firecrawl tools are not already loaded, discover them through `tool_search` first, then use the Firecrawl search, scrape, crawl, or extract tool that matches the task.
+
+Use more specific documentation tools before general web search when they apply:
+- OpenAI docs tooling for OpenAI product/API questions.
+- Context7 or docs-lookup for library, framework, SDK, CLI, and cloud-service documentation.
+- Supabase docs/MCP tooling for Supabase-specific schema, auth, RLS, Edge Function, CLI, and platform questions.
+
+Use the built-in web search/browser tools only for quick lightweight lookups, specialized built-in data tools such as finance/weather/sports/time, opening a known URL, or as a fallback when Firecrawl or the more specific docs tool is unavailable or fails.
+
 ## Security Guidelines
 
 **Before ANY commit:**

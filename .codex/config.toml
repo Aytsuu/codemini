@@ -82,6 +82,9 @@ startup_timeout_sec = 30
 command = "npx"
 args = ["-y", "firecrawl-mcp"]
 
+[mcp_servers.token-optimizer]
+command = "npx"
+args = ["-y", "token-optimizer-mcp"]
 
 [features]
 # Codex multi-agent collaboration is stable and on by default in current builds.

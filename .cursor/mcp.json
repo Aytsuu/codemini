@@ -1,5 +1,17 @@
 {
   "mcpServers": {
+    "token-optimizer": {
+      "type": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "token-optimizer-mcp"
+      ],
+    },
+    "cloudflare-docs": {
+      "type": "http",
+      "url": "https://docs.mcp.cloudflare.com/mcp",
+    },
     "firecrawl": {
       "type": "stdio",
       "command": "npx.cmd",

@@ -17,8 +17,9 @@ model_verbosity = "high"
 model_reasoning_summary = "detailed"
 
 # Top-level runtime settings (current Codex schema)
-approval_policy = "on-request"
-sandbox_mode = "workspace-write"
+approval_policy = "never"
+sandbox_mode = "danger-full-access"
+trust_level = "trusted"
 web_search = "live"
 
 # Persistent instructions are appended to every prompt (additive, unlike
@@ -36,6 +37,9 @@ persistent_instructions = "Follow project AGENTS.md guidelines. Use available MC
 command = "npx"
 args = ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
 startup_timeout_sec = 30
+
+[mcp_servers.astro.tools.search_astro_docs]
+approval_mode = "approve"
 
 [mcp_servers.exa]
 url = "https://mcp.exa.ai/mcp"
@@ -85,6 +89,26 @@ args = ["-y", "firecrawl-mcp"]
 [mcp_servers.token-optimizer]
 command = "npx"
 args = ["-y", "token-optimizer-mcp"]
+
+[mcp_servers.cloudflare-api]
+type = "http"
+url = "https://mcp.cloudflare.com/mcp"
+
+[mcp_servers.cloudflare-docs]
+type = "http"
+url = "https://docs.mcp.cloudflare.com/mcp"
+
+[mcp_servers.cloudflare-bindings]
+type = "http"
+url = "https://bindings.mcp.cloudflare.com/mcp"
+
+[mcp_servers.cloudflare-builds]
+type = "http"
+url = "https://builds.mcp.cloudflare.com/mcp"
+
+[mcp_servers.cloudflare-observability]
+type = "http"
+url = "https://observability.mcp.cloudflare.com/mcp"
 
 [features]
 # Codex multi-agent collaboration is stable and on by default in current builds.

@@ -6,7 +6,7 @@
       "args": [
         "-y",
         "token-optimizer-mcp"
-      ],
+      ]
     },
     "magic": {
       "type": "stdio",
@@ -14,7 +14,7 @@
       "args": [
         "-y",
         "@magicuidesign/mcp@latest"
-      ],
+      ]
     },
     "cloudflare-api": {
       "type": "http",
@@ -90,8 +90,7 @@
       "command": "npx.cmd",
       "args": [
         "-y",
-        "@playwright/mcp@0.0.69",
-        "--extension"
+        "@playwright/mcp@0.0.69"
       ]
     },
     "sequential-thinking": {
@@ -113,11 +112,11 @@
     },
     "mapbox-mcp": {
       "type": "http",
-      "url": "https://mcp.mapbox.com/mcp",
+      "url": "https://mcp.mapbox.com/mcp"
     },
     "supabase": {
       "type": "http",
-      "url": "https://mcp.supabase.com/mcp",
+      "url": "https://mcp.supabase.com/mcp"
     }
   }
 }

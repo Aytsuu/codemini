@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "shadcn": {
+      "command": "npx.cmd",
+      "args": ["shadcn@latest", "mcp"]
+    },
     "token-optimizer": {
       "type": "stdio",
       "command": "npx.cmd",

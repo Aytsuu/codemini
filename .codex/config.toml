@@ -33,6 +33,10 @@ persistent_instructions = "Follow project AGENTS.md guidelines. Use available MC
 # MCP servers
 # Keep the default project set lean. API-backed servers inherit credentials from
 # the launching environment or can be supplied by a user-level ~/.codex/config.toml.
+[mcp_servers.shadcn]
+command = "npx"
+args = ["shadcn@latest", "mcp"]
+
 [mcp_servers.astro]
 command = "npx"
 args = ["-y", "mcp-remote", "https://mcp.docs.astro.build/mcp"]
